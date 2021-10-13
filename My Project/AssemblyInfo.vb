@@ -11,14 +11,14 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyTitle("Ignore DNS Request Plug-In")> 
 <Assembly: AssemblyDescription("Ignore DNS Request Plug-In")> 
 <Assembly: AssemblyCompany("JH Software ApS")> 
-<Assembly: AssemblyProduct("Simple DNS Plus")> 
-<Assembly: AssemblyCopyright("Copyright © 2009-2015 JH Software ApS")> 
+<Assembly: AssemblyProduct("Simple DNS Plus")>
+<Assembly: AssemblyCopyright("Copyright © 2009-2021 JH Software ApS")>
 <Assembly: AssemblyTrademark("Simple DNS Plus")> 
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("6d7c7b0c-dbe0-4cf4-aa91-7f4f3da8d38d")> 
+<Assembly: Guid("6d7c7b0c-dbe0-4cf4-aa91-7f4f3da8d38d")>
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("5.2.30.0")> 
-<Assembly: AssemblyFileVersion("5.2.30.0")> 
+<Assembly: AssemblyVersion("9.1.1.0")>
+<Assembly: AssemblyFileVersion("9.1.1.0")>
