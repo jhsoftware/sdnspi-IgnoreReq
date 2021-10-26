@@ -30,15 +30,15 @@ Public Class IgnoreRequestPlugIn
 
 #End Region
 
-  Public Function GetPlugInTypeInfo() As JHSoftware.SimpleDNS.Plugin.IPlugInBase.PlugInTypeInfo Implements JHSoftware.SimpleDNS.Plugin.IPlugInBase.GetPlugInTypeInfo
+  Public Function GetPlugInTypeInfo() As JHSoftware.SimpleDNS.Plugin.IPlugInBase.PlugInTypeInfo Implements JHSoftware.SimpleDNS.Plugin.IPlugInBase.GetTypeInfo
     With GetPlugInTypeInfo
       .Name = "Ignore DNS Request"
       .Description = "Instructs Simple DNS Plus to ignore (not answer) DNS requests"
-      .InfoURL = "https://simpledns.plus/kb/180/ignore-dns-request-plug-in"
+      .InfoURL = "https://simpledns.plus/plugin-ignorereq"
     End With
   End Function
 
-  Public Function IgnoreRequest(ByVal request As JHSoftware.SimpleDNS.Plugin.IDNSRequest) As Threading.Tasks.Task(Of Boolean) Implements JHSoftware.SimpleDNS.Plugin.IIgnoreRequest.IgnoreRequest
+  Public Function IgnoreRequest(ByVal request As IRequestContext) As Threading.Tasks.Task(Of Boolean) Implements JHSoftware.SimpleDNS.Plugin.IIgnoreRequest.IgnoreRequest
     Return Threading.Tasks.Task.FromResult(True)
   End Function
 
